@@ -51,10 +51,10 @@ def generar_eda(df, output_dir="outputs/"):
     plt.savefig(f"{output_dir}/boxplot_turno.png")
     plt.close()
 
-    print("✅ Visualizaciones EDA generadas y guardadas en:", output_dir)
+    print("Visualizaciones EDA generadas y guardadas en:", output_dir)
 
 
 if __name__ == "__main__":
     # Asegúrate de que el archivo limpio exista en la ruta esperada
-    df = pd.read_csv("outputs/Dataset_Talento_Limpio_UTF8.csv", encoding="utf-8-sig")
+    df = pd.read_csv("outputs/Dataset_Talento_Sin_Outliers.csv", encoding="utf-8-sig")
     generar_eda(df)

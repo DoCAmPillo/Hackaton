@@ -5,7 +5,7 @@
 
 
 import pandas as pd
-df = pd.read_csv('outputs/Dataset_Talento_Limpio_UTF8.csv')
+df = pd.read_csv('Dataset_Talento_Limpio_UTF8.csv')
 
 df
 

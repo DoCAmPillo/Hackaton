@@ -31,7 +31,7 @@ def cargar_y_limpiar_datos(ruta):
             df[col] = df[col].astype("category")
 
     # Guardar el archivo limpio en UTF-8
-    df.to_csv("outputs/Dataset_Talento_Limpio_UTF8.csv", index=False, encoding="utf-8")
+    df.to_csv("Dataset_Talento_Limpio_UTF8.csv", index=False, encoding="utf-8")
 
     return df
 
